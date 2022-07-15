@@ -1,0 +1,41 @@
+<!doctype html> 
+<!--не получилось подключить шрифты и сдвинуть футер вниз-->
+<html> 
+<head>
+    <style> 
+        a[href^="mailto:"] {
+            font-size: 35px;
+            line-height: 32px;
+            text-decoration: none;
+            color:rgb(0, 0, 0)
+        }
+        a[href^="tel:"] {
+            font-size: 35px;
+            line-height: 32px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        
+        a[href^="tel:"]::before {
+            content: "\260e";
+            margin-right: 0.5em;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title> Контакты - Моя первая веб-страница </title>
+</head>
+<body bgcolor="Honeydew" text="black">
+    <header>
+        <a href="../index.html">Главная</a>
+        <a href="about.html">Обо мне</a>
+        <a href="#">Контакты</a>
+    </header>
+    <main>
+        <p> <a href="mailto: ksucha.n@yandex.ru?subject=Вопрос о программе"> Электронная почта для ваших вопросов</a></p>
+        <p> <a href="tel:+79607594353">Звоните по любому поводу</a></p>
+    </main>
+    <footer>
+        <span>&copy;&nbsp;Skillfactory</span>
+    </footer>
+</body>
+</html>
